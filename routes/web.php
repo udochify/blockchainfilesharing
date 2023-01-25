@@ -29,8 +29,6 @@ Route::middleware(['auth', 'nocache'])->group(function () {
     Route::get('/share/check', [ShareController::class, 'check'])->name('share.check');
     Route::get('/contacts/error', [ContactController::class, 'error'])->name('contacts.error');
     Route::get('/files/error', [FileController::class, 'error'])->name('files.error');
-    Route::post('/files/delete/{file}', [FileController::class, 'delete'])->name('files.delete');
-    Route::post('/files/download/{file}', [FileController::class, 'download'])->name('files.download');
     Route::post('/files/share/{file}', [ShareController::class, 'share'])->name('files.share');
     Route::post('/files/unshare/{file}', [ShareController::class, 'unshare'])->name('files.unshare');
     Route::post('/files/unshare_reverse/{file}', [ShareController::class, 'unshare_reverse'])->name('files.unshare_reverse');
@@ -40,6 +38,8 @@ Route::middleware(['auth', 'nocache'])->group(function () {
 Route::middleware('auth')->group(function () {
     Route::resource('files', FileController::class)->only(['index', 'store'])
         ->names(['index'=>'files.index', 'store'=>'files.upload']);
+    Route::post('/files/delete/{file}', [FileController::class, 'delete'])->name('files.delete');
+    Route::post('/files/download/{file}', [FileController::class, 'download'])->name('files.download');
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
