@@ -8,7 +8,6 @@
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -18,7 +17,7 @@
             <div>
                 <a href="/">
                     <div class="w-[200px]">
-                        <img class="relative w-full h-auto" src="img/logo-file-storage.jpg" />
+                        <img class="relative w-full h-auto" src="img/logo-file-sharing.jpg" />
                     </div>
                 </a>
             </div>

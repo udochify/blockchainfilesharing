@@ -1,0 +1,1 @@
+<x-contact.item :name="$contact->name" :address="$contact->address" class="hover:bg-gray-200" />
