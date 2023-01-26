@@ -49,7 +49,7 @@
                             <p class="font-bold font-serif text-6xl">Blockchain File Sharing Application</p>
                         </div>
                         <div class="mt-8">
-                            <p>Our application enable users share files among each other with ease in a pair to pair manner. Also, users’ mind can be at ease because now there’s a higher level of trust because the metadata of files stores in the Database are being also secured in Blockchain alongside the sharing relationship between files.</p>
+                            <p>Our application enable users share files among each other with ease in a pair to pair manner. Also, users’ mind can be at ease because there is a higher level of trust as the metadata of files stored in the Database are also secured in a Blockchain alongside sharing relationship between files.</p>
                         </div>
                     </div>
                 </div>
