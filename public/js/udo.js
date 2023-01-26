@@ -167,7 +167,7 @@ function share() {
     disableLinks();
     uFetch(target.find("form[class^='share']").prop('action'), init, {
         success: function(data) {
-            if(data.success) target.find('.share-panel').append(data.view);
+            if(data.success) target.find('.share-panel').prepend(data.view);
             $('#ajax-status').html(data.status);
             // console.log(data);
         },
