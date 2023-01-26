@@ -24,7 +24,7 @@
         </style>
     </head>
     <body class="antialiased">
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
+        <div class="relative flex items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             <div class="fixed w-full h-fit top-0 right-0 px-6 pt-4 pb-0 text-right block z-20 bg-white">
             @if (Route::has('login'))
                 @auth
